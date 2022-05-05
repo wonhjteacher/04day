@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* 초기화 */
+*{margin: 0;padding: 0}
+ul,ol{list-style: none;}
+a{text-decoration: none;color:inherit}
+h1,h2,h3,h4,h5,h6{font-weight: normal;font-size: 100%;}
+body{line-height: 1;}
+
+.wrapper{width: 100%;}
+.header{height: 100px;width: 100%;border-bottom:1px solid #999}
+.inner{width:1200px;margin: auto;}
+.cf::after{content: '';width: 0;height: 0;font-size: 0;display: block;clear: both;}
+
+.header .logo{float: left;font-size: 24px;font-weight: bold;line-height: 100px;}
+.header .gnb{float: right;}
+.header .gnb>li{float: left;}
+.header .gnb>li>a{display: block;width: 100px;height: 100px;text-align: center;line-height: 100px;}
+.header .gnb>li>a:hover{background-color: #000;color:#fff}
+
+.main-banner{height: 700px;background: url(./../img/husky/bg2.jpg) no-repeat center top -200px / cover ;text-indent: -9999px;font-size: 0; }
+
+
+.container{padding-top: 80px;padding-bottom: 300px;}
+.container .img-list{width: 960px;margin: auto;}
+.container .img-list>li{float: left;}
+
+.footer{height: 50px; color:#fff;background-color: #000;text-align: center;line-height: 50px;}
