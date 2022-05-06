@@ -5,19 +5,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
     <style>
-     
+        .clearfix::after,.cf::after{content: '';width: 0;height: 0;display: block;clear: both;}
+        .box{width: 500px;border:5px solid red;/* overflow: hidden; */}
+        .box>a{display: block;width: 100px;height: 100px;background-color: #693;margin: 10px;float: left}
+      
+        .box2{width: 600px;border: 10px solid tomato;margin: 100px 0}
+        .box2>a{display: block;width: 100px;height: 100px;background: #933;margin: 10px;float: left}
     </style>
 </head>
 <body>
-    <div class="box">
+    <div class="box cf">
         <a href="#">1</a>
         <a href="#">2</a>
         <a href="#">3</a>
         <a href="#">4</a>
-        <p></p>
     </div>
     
-    <div class="box2">
+    <div class="box2 clearfix">
         <a href="#">1</a>
         <a href="#">2</a>
         <a href="#">3</a>
